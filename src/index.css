@@ -1,0 +1,493 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+/* =========================
+   AUTH PAGES
+   ========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.auth-card h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.auth-message {
+  text-align: center;
+  margin-top: 18px;
+  color: #dc2626;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+
+.link-button {
+  border: none;
+  background: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   COMMON
+   ========================= */
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #2563eb;
+}
+
+.dashboard-header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.logout-button {
+  background: #ef4444;
+  color: white;
+}
+
+.dashboard-section {
+  width: 88%;
+  max-width: 1200px;
+  margin: 35px auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.section-heading span {
+  color: #666;
+  font-size: 14px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card,
+.dashboard-card,
+.empty-card,
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.product-card h3,
+.dashboard-card h3 {
+  margin-top: 8px;
+}
+
+.product-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.muted-text {
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-button {
+  margin-top: 18px;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+}
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #222;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  margin-left: 8px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-section {
+  width: 88%;
+  max-width: 700px;
+  margin: 35px auto;
+}
+
+.form-card h2 {
+  margin-top: 0;
+}
+
+.form-card .form-group {
+  margin-bottom: 18px;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+}
+
+.form-card .primary-button,
+.form-card .secondary-button {
+  margin-top: 5px;
+}
+
+.dashboard-message {
+  width: 88%;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 14px 18px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 8px;
+}
+
+.error-text {
+  color: #dc2626;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 18px 5%;
+  }
+
+  .dashboard-section,
+  .form-section,
+  .dashboard-message {
+    width: 92%;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .card-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   SELLER DASHBOARD
+   ========================= */
+
+.return-details {
+  margin: 18px 0;
+}
+
+.return-details p {
+  margin: 9px 0;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.action-buttons button {
+  margin: 0;
+}
+
+.danger-button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+}
+
+.danger-button:hover {
+  background: #dc2626;
+}
+
+.success-button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+}
+
+.success-button:hover {
+  background: #15803d;
+}
+
+.dashboard-card p {
+  color: #444;
+}
+
+/* =========================
+   ADMIN DASHBOARD
+   ========================= */
+
+.admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.admin-stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.admin-stat-card p {
+  margin: 0 0 5px;
+  color: #666;
+}
+
+.admin-stat-card h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.delivered-text {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.return-tracking {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f8f9fc;
+  border-radius: 10px;
+}
+
+.return-tracking h4 {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+
+.tracking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tracking-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #999;
+  font-size: 14px;
+}
+
+.tracking-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.tracking-step.completed {
+  color: #198754;
+  font-weight: 600;
+}
+
+.tracking-step.completed .tracking-icon {
+  background: #198754;
+  color: white;
+  border-color: #198754;
+}
+
+.tracking-rejected {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #dc3545;
+}
+
+.tracking-rejected > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tracking-rejected strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tracking-rejected p {
+  margin: 0;
+  font-size: 14px;
+}
