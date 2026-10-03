@@ -78,7 +78,23 @@ function AdminDashboard() {
   };
 
   return (
-    <div className="dashboard-page">
+    <div className="dashboard-layout">
+      <aside className="dashboard-sidebar">
+        <div className="sidebar-brand">
+          <span className="brand-mark">R</span>
+          <div><strong>ReturnFlow</strong><small>Admin</small></div>
+        </div>
+        <nav className="sidebar-nav">
+              <a href="#overview" className="sidebar-nav-item active"><span className="sidebar-dot">⌂</span>Overview</a>
+              <a href="#users" className="sidebar-nav-item"><span className="sidebar-dot">♙</span>Users</a>
+              <a href="#products" className="sidebar-nav-item"><span className="sidebar-dot">▦</span>Products</a>
+              <a href="#disputes" className="sidebar-nav-item"><span className="sidebar-dot">!</span>Disputes</a>
+        </nav>
+        <div className="sidebar-footer">
+          <div className="sidebar-status"><span></span><div><strong>System online</strong><small>All services operational</small></div></div>
+        </div>
+      </aside>
+      <div className="dashboard-page">
 
       {/* HEADER */}
 
@@ -108,7 +124,7 @@ function AdminDashboard() {
 
       {/* SUMMARY */}
 
-      <section className="dashboard-section">
+      <section id="overview" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Overview</h2>
@@ -155,7 +171,7 @@ function AdminDashboard() {
 
       {/* USERS */}
 
-      <section className="dashboard-section">
+      <section id="users" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Users</h2>
@@ -203,7 +219,7 @@ function AdminDashboard() {
 
       {/* PRODUCTS */}
 
-      <section className="dashboard-section">
+      <section id="products" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Products</h2>
@@ -255,7 +271,7 @@ function AdminDashboard() {
 
       {/* DISPUTES */}
 
-      <section className="dashboard-section">
+      <section id="disputes" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Disputes</h2>
@@ -351,6 +367,7 @@ function AdminDashboard() {
 
       </section>
 
+      </div>
     </div>
   );
 }

@@ -298,7 +298,24 @@ const hasReturnForOrder = (orderId) => {
   };
 
   return (
-    <div className="dashboard-page">
+    <div className="dashboard-layout">
+      <aside className="dashboard-sidebar">
+        <div className="sidebar-brand">
+          <span className="brand-mark">R</span>
+          <div><strong>ReturnFlow</strong><small>Customer</small></div>
+        </div>
+        <nav className="sidebar-nav">
+              <a href="#products" className="sidebar-nav-item active"><span className="sidebar-dot">⌂</span>Overview</a>
+              <a href="#products" className="sidebar-nav-item"><span className="sidebar-dot">▦</span>Products</a>
+              <a href="#orders" className="sidebar-nav-item"><span className="sidebar-dot">▣</span>Orders</a>
+              <a href="#returns" className="sidebar-nav-item"><span className="sidebar-dot">↩</span>My Returns</a>
+              <a href="#disputes" className="sidebar-nav-item"><span className="sidebar-dot">!</span>Disputes</a>
+        </nav>
+        <div className="sidebar-footer">
+          <div className="sidebar-status"><span></span><div><strong>System online</strong><small>All services operational</small></div></div>
+        </div>
+      </aside>
+      <div className="dashboard-page">
 
       <header className="dashboard-header">
         <div>
@@ -330,7 +347,7 @@ const hasReturnForOrder = (orderId) => {
 
         {/* PRODUCTS */}
 
-        <section className="dashboard-section">
+        <section id="products" className="dashboard-section">
 
           <div className="section-heading">
             <div>
@@ -393,7 +410,7 @@ const hasReturnForOrder = (orderId) => {
 
         {/* ORDERS */}
 
-        <section className="dashboard-section">
+        <section id="orders" className="dashboard-section">
 
           <div className="section-heading">
             <div>
@@ -489,7 +506,7 @@ const hasReturnForOrder = (orderId) => {
 
         {selectedOrderItem && (
 
-          <section className="dashboard-section">
+          <section id="request-return" className="dashboard-section">
 
             <div className="section-heading">
               <div>
@@ -609,7 +626,7 @@ const hasReturnForOrder = (orderId) => {
 
         {/* RETURNS */}
 
-<section className="dashboard-section">
+<section id="returns" className="dashboard-section">
 
   <div className="section-heading">
     <div>
@@ -753,7 +770,7 @@ const hasReturnForOrder = (orderId) => {
 
         {disputeReturnId && (
 
-          <section className="dashboard-section">
+          <section id="disputes" className="dashboard-section">
 
             <div className="section-heading">
               <div>
@@ -836,6 +853,7 @@ const hasReturnForOrder = (orderId) => {
 
       </main>
 
+      </div>
     </div>
   );
 }

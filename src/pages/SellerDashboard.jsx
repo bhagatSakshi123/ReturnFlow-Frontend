@@ -410,7 +410,25 @@ function SellerDashboard() {
   };
 
   return (
-    <div className="dashboard-page">
+    <div className="dashboard-layout">
+      <aside className="dashboard-sidebar">
+        <div className="sidebar-brand">
+          <span className="brand-mark">R</span>
+          <div><strong>ReturnFlow</strong><small>Seller / Warehouse</small></div>
+        </div>
+        <nav className="sidebar-nav">
+              <a href="#orders" className="sidebar-nav-item active"><span className="sidebar-dot">⌂</span>Overview</a>
+              <a href="#orders" className="sidebar-nav-item"><span className="sidebar-dot">▣</span>Orders</a>
+              <a href="#returns" className="sidebar-nav-item"><span className="sidebar-dot">↩</span>Return Queue</a>
+              <a href="#returns" className="sidebar-nav-item"><span className="sidebar-dot">✓</span>Inspection</a>
+              <a href="#returns" className="sidebar-nav-item"><span className="sidebar-dot">₹</span>Refunds</a>
+              <a href="#disputes" className="sidebar-nav-item"><span className="sidebar-dot">!</span>Disputes</a>
+        </nav>
+        <div className="sidebar-footer">
+          <div className="sidebar-status"><span></span><div><strong>System online</strong><small>All services operational</small></div></div>
+        </div>
+      </aside>
+      <div className="dashboard-page">
 
       {/* HEADER */}
 
@@ -442,7 +460,7 @@ function SellerDashboard() {
           ORDERS
           ========================= */}
 
-      <section className="dashboard-section">
+      <section id="orders" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Customer Orders</h2>
@@ -516,7 +534,7 @@ function SellerDashboard() {
           RETURN REQUESTS
           ========================= */}
 
-      <section className="dashboard-section">
+      <section id="returns" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Return Requests</h2>
@@ -886,7 +904,7 @@ function SellerDashboard() {
           CUSTOMER DISPUTES
           ========================= */}
 
-      <section className="dashboard-section">
+      <section id="disputes" className="dashboard-section">
 
         <div className="section-heading">
           <h2>Customer Disputes</h2>
@@ -984,7 +1002,7 @@ function SellerDashboard() {
                           )
                         }
                       >
-                        {loadingAction === `dispute-${dispute.id}-REJECTED`
+                        {loadingActiPon === `dispute-${dispute.id}-REJECTED`
                           ? "Updating..."
                           : "Reject"}
                       </button>
@@ -1001,6 +1019,7 @@ function SellerDashboard() {
 
       </section>
 
+      </div>
     </div>
   );
 }
