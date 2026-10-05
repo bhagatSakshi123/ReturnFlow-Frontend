@@ -80,6 +80,38 @@ Dispute Management
 - REST API
 - JWT Authentication
 
+## Screenshots
+
+### Login
+![Login](./01-login.png)
+
+### Customer — Products
+![Customer Products](./02-customer-products.png)
+
+### Return Request
+![Return Request](./03-return-request.png)
+
+### Return Tracking
+![Return Tracking](./04-return-tracking.png)
+
+### Seller Dashboard
+![Seller Dashboard](./05-seller-dashboard.png)
+
+### Return Inspection
+![Inspection](./06-inspection.png)
+
+### Refund Management
+![Refund](./07-refund.png)
+
+### Dispute Management
+![Dispute Management](./08-dispute-management.png)
+
+### Admin Dashboard
+![Admin Dashboard](./09-admin-dashboard.png)
+
+### Swagger API Documentation
+![Swagger API](./10-swagger-api.png)
+
 ## Backend
 
 This frontend communicates with the ReturnFlow Spring Boot REST API.
