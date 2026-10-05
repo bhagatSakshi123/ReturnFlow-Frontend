@@ -126,21 +126,29 @@ https://github.com/bhagatSakshi123/ReturnFlow-Frontend
 
 ## Project Structure
 
-src/
-├── assets/
-├── components/
-├── pages/
-│   ├── Login.jsx
-│   ├── Register.jsx
-│   ├── CustomerDashboard.jsx
-│   ├── SellerDashboard.jsx
-│   └── AdminDashboard.jsx
-├── services/
-│   └── api.js
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
+```text
+returnflow-frontend
+│
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── CustomerDashboard.jsx
+│   │   ├── SellerDashboard.jsx
+│   │   └── AdminDashboard.jsx
+│   ├── services
+│   │   └── api.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── public
+├── package.json
+└── README.md
+```
 
 ## Authentication
 
